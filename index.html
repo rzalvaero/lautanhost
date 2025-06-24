@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Artikel Sederhana</title>
+    <!-- Memuat Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Gaya kustom untuk font Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Warna latar belakang abu-abu terang */
+            color: #374151; /* Warna teks abu-abu gelap */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+        <!-- Header Halaman -->
+        <header class="w-full max-w-4xl bg-white shadow-md rounded-lg p-6 mb-8">
+            <h1 class="text-4xl font-extrabold text-center text-indigo-700 mb-2 rounded-md">
+                Judul Artikel Anda
+            </h1>
+            <p class="text-lg text-center text-gray-600 rounded-md">
+                Subjudul atau Deskripsi Singkat Artikel
+            </p>
+            <div class="flex justify-center mt-4 space-x-4 rounded-md">
+                <span class="text-sm text-gray-500">Penulis: Nama Penulis</span>
+                <span class="text-sm text-gray-500">Tanggal: 24 Juni 2025</span>
+            </div>
+        </header>
+
+        <!-- Bagian Artikel Utama -->
+        <main class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8">
+            <!-- Gambar placeholder artikel -->
+            <div class="mb-8 rounded-md overflow-hidden">
+                <img src="https://placehold.co/800x400/808080/FFFFFF?text=Gambar+Artikel"
+                     alt="Gambar Ilustrasi Artikel"
+                     class="w-full h-auto object-cover rounded-md">
+            </div>
+
+            <!-- Konten Artikel -->
+            <section class="prose max-w-none text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Ini adalah paragraf pengantar artikel Anda. Anda dapat memulai dengan menarik perhatian pembaca
+                    atau memberikan gambaran umum tentang topik yang akan dibahas. Tujuan dari paragraf ini
+                    adalah untuk memberikan konteks dan mempersiapkan pembaca untuk isi yang akan datang.
+                    Pastikan untuk membuatnya menarik dan mudah dimengerti.
+                </p>
+
+                <h2 class="text-2xl font-bold text-indigo-600 mb-4 rounded-md">Subjudul Bagian Pertama</h2>
+                <p class="mb-4">
+                    Di bagian ini, Anda dapat memperdalam salah satu aspek dari topik utama. Gunakan paragraf yang jelas
+                    dan ringkas untuk menyampaikan ide-ide Anda. Pertimbangkan untuk menggunakan daftar berpoin atau
+                    bernomor jika Anda memiliki beberapa poin yang perlu disampaikan secara terstruktur.
+                    Ini membantu dalam keterbacaan dan pemahaman.
+                </p>
+                <ul class="list-disc list-inside mb-4 pl-5 rounded-md">
+                    <li>Poin penting pertama yang relevan dengan subjudul ini.</li>
+                    <li>Poin penting kedua yang memberikan detail lebih lanjut.</li>
+                    <li>Poin penting ketiga yang mungkin merupakan kesimpulan singkat.</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-indigo-600 mb-4 rounded-md">Subjudul Bagian Kedua</h2>
+                <p class="mb-4">
+                    Lanjutkan dengan mengembangkan argumen Anda atau memperkenalkan subtopik baru. Jaga agar alur artikel
+                    tetap logis dan koheren. Anda bisa memasukkan contoh, statistik, atau kutipan untuk mendukung
+                    klaim Anda dan membuat artikel lebih meyakinkan dan informatif.
+                </p>
+                <p class="mb-4">
+                    Setiap paragraf harus memiliki fokus yang jelas dan berkontribusi pada pesan keseluruhan artikel.
+                    Hindari paragraf yang terlalu panjang yang mungkin membuat pembaca kehilangan minat.
+                    Gunakan transisi yang mulus antara paragraf dan bagian.
+                </p>
+
+                <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 italic text-gray-600 mb-6 bg-indigo-50 rounded-md">
+                    "Kutipan yang relevan atau penekanan pada poin penting dari artikel Anda."
+                </blockquote>
+
+                <p class="mb-4">
+                    Terakhir, ringkaslah poin-poin utama Anda di paragraf penutup. Ini harus memberikan rasa
+                    penutupan dan mungkin mendorong pembaca untuk bertindak atau merenungkan topik tersebut lebih lanjut.
+                    Pastikan untuk tidak memperkenalkan informasi baru di sini.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer Halaman -->
+        <footer class="w-full max-w-4xl text-center text-gray-500 text-sm mt-8 p-4 bg-white shadow-md rounded-lg">
+            <p>&copy; 2025 Halaman Artikel Sederhana. Hak Cipta Dilindungi Undang-Undang.</p>
+            <p>Dibuat dengan <span class="text-red-500">&hearts;</span> untuk Anda.</p>
+        </footer>
+    </div>
+</body>
+</html>
