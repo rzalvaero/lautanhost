@@ -1,96 +1,217 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Artikel Sederhana</title>
-    <!-- Memuat Tailwind CSS untuk styling -->
+    <!-- Judul Meta SEO -->
+    <title>Teras Jati Bogor: Restoran & Tempat Acara Unik dengan Ayam Bakar Kampung</title>
+    <!-- Deskripsi Meta SEO -->
+    <meta name="description" content="Temukan ketenangan di Teras Jati Bogor! Nikmati keindahan arsitektur jati, lingkungan asri, dan kelezatan Ayam Bakar Kampung. Ideal untuk kuliner & acara pribadi/korporat.">
+    <!-- Memuat Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Gaya kustom untuk font Inter */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Warna latar belakang abu-abu terang */
-            color: #374151; /* Warna teks abu-abu gelap */
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start for article flow */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .article-container {
+            background-color: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            width: 100%;
+            margin: 20px; /* Margin around the article for better spacing */
+            box-sizing: border-box;
+        }
+        .article-title {
+            color: #1a202c;
+            margin-bottom: 20px;
+            font-size: 2rem; /* Larger title for article */
+            font-weight: bold;
+            text-align: center;
+        }
+        .article-subtitle {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        .article-content p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .article-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+        .article-content ul li {
+            margin-bottom: 0.5rem;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px; /* Space below the video */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
         }
     </style>
 </head>
-<body class="antialiased">
-    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
-        <!-- Header Halaman -->
-        <header class="w-full max-w-4xl bg-white shadow-md rounded-lg p-6 mb-8">
-            <h1 class="text-4xl font-extrabold text-center text-indigo-700 mb-2 rounded-md">
-                Judul Artikel Anda
-            </h1>
-            <p class="text-lg text-center text-gray-600 rounded-md">
-                Subjudul atau Deskripsi Singkat Artikel
+<body>
+    <div class="article-container">
+        <h1 class="article-title">Teras Jati: Oase Tenang dan Harmoni Kuliner di Jantung Bogor</h1>
+        <p class="article-subtitle">Dalam hiruk pikuk kehidupan modern yang serba cepat, menemukan tempat yang menawarkan ketenangan, keindahan alam, dan pengalaman kuliner yang autentik menjadi sebuah kemewahan.</p>
+
+        <div class="video-wrapper">
+            <!-- YouTube video embed -->
+            <iframe
+                src="https://www.youtube.com/embed/5CsiysuKi3M"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+
+        <div class="article-content">
+            <p>
+                Di tengah keasrian kota Bogor, Teras Jati hadir sebagai jawaban atas kerinduan tersebut. Lebih dari sekadar restoran atau tempat acara, Teras Jati adalah sebuah destinasi yang menyatukan arsitektur memukau, lingkungan alami yang menenangkan, dan cita rasa masakan tradisional yang lezat, menciptakan harmoni sempurna bagi setiap pengunjungnya.
             </p>
-            <div class="flex justify-center mt-4 space-x-4 rounded-md">
-                <span class="text-sm text-gray-500">Penulis: Nama Penulis</span>
-                <span class="text-sm text-gray-500">Tanggal: 24 Juni 2025</span>
-            </div>
-        </header>
 
-        <!-- Bagian Artikel Utama -->
-        <main class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8">
-            <!-- Gambar placeholder artikel -->
-            <div class="mb-8 rounded-md overflow-hidden">
-                <img src="https://placehold.co/800x400/808080/FFFFFF?text=Gambar+Artikel"
-                     alt="Gambar Ilustrasi Artikel"
-                     class="w-full h-auto object-cover rounded-md">
-            </div>
+            <h2>Memasuki Dunia Teras Jati: Sebuah Pengalaman Sensorik</h2>
+            <p>
+                Sejak pertama kali menginjakkan kaki di Teras Jati, pengunjung akan segera merasakan perbedaan yang mendalam. Aroma dedaunan segar bercampur dengan wangi kayu jati yang khas menyambut kedatangan Anda, seolah membawa Anda jauh dari hiruk pikuk perkotaan menuju sebuah oase tersembunyi. Desain arsitektur Teras Jati adalah sebuah mahakarya yang secara cerdas mengintegrasikan bangunan dengan lanskap sekitarnya, menciptakan suasana yang sekaligus megah namun tetap membumi.
+            </p>
 
-            <!-- Konten Artikel -->
-            <section class="prose max-w-none text-gray-700 leading-relaxed">
-                <p class="mb-4">
-                    Ini adalah paragraf pengantar artikel Anda. Anda dapat memulai dengan menarik perhatian pembaca
-                    atau memberikan gambaran umum tentang topik yang akan dibahas. Tujuan dari paragraf ini
-                    adalah untuk memberikan konteks dan mempersiapkan pembaca untuk isi yang akan datang.
-                    Pastikan untuk membuatnya menarik dan mudah dimengerti.
-                </p>
+            <h3>Pilar Jati Utuh: Fondasi Kemegahan Alam</h3>
+            <p>
+                Salah satu elemen arsitektur paling mencolok dan ikonik dari Teras Jati adalah penggunaan pilar-pilar utama yang terbuat dari batang pohon jati utuh. Pilar-pilar kolosal ini tidak hanya berfungsi sebagai penopang struktural, tetapi juga sebagai pernyataan artistik yang kuat. Permukaan kayu jati yang alami, dengan tekstur dan guratan kayunya yang unik, menceritakan kisah pertumbuhan dan ketahanan alam. Setiap pilar menjadi pengingat akan kekayaan hutan tropis Indonesia, memancarkan aura keanggunan yang tak lekang oleh waktu. Kehadiran pilar-pilar ini secara langsung menyampaikan filosofi Teras Jati yang sangat menghargai keaslian dan kekayaan alam, membawa esensi hutan jati ke dalam ruang makan dan acara Anda. Cahaya alami yang masuk melalui celah-celah arsitektur memantul pada permukaan kayu, menciptakan permainan bayangan yang dinamis sepanjang hari, menambah kedalaman visual dan nuansa yang menenangkan.
+            </p>
 
-                <h2 class="text-2xl font-bold text-indigo-600 mb-4 rounded-md">Subjudul Bagian Pertama</h2>
-                <p class="mb-4">
-                    Di bagian ini, Anda dapat memperdalam salah satu aspek dari topik utama. Gunakan paragraf yang jelas
-                    dan ringkas untuk menyampaikan ide-ide Anda. Pertimbangkan untuk menggunakan daftar berpoin atau
-                    bernomor jika Anda memiliki beberapa poin yang perlu disampaikan secara terstruktur.
-                    Ini membantu dalam keterbacaan dan pemahaman.
-                </p>
-                <ul class="list-disc list-inside mb-4 pl-5 rounded-md">
-                    <li>Poin penting pertama yang relevan dengan subjudul ini.</li>
-                    <li>Poin penting kedua yang memberikan detail lebih lanjut.</li>
-                    <li>Poin penting ketiga yang mungkin merupakan kesimpulan singkat.</li>
-                </ul>
+            <h3>Dinding Kayu Jati: Pelukan Kehangatan Alami</h3>
+            <p>
+                Tidak hanya pilar, dinding-dinding Teras Jati juga dipercantik dengan potongan-potongan kayu jati yang disusun artistik. Susunan kayu ini menciptakan tekstur visual yang kaya, sekaligus memberikan sentuhan kehangatan dan kenyamanan. Dinding kayu ini tidak hanya sekadar elemen dekoratif; mereka berfungsi sebagai insulator alami, membantu menjaga suhu di dalam ruangan agar tetap nyaman, baik saat cuaca panas maupun dingin. Sentuhan kayu jati di seluruh interior menciptakan kohesi desain yang kuat, di mana setiap detail dirancang untuk membangkitkan rasa damai dan koneksi dengan alam. Permukaan kayu yang dipoles halus mengundang sentuhan, dan setiap serat kayu menceritakan bagian dari sejarah panjang pohon yang memberikannya.
+            </p>
 
-                <h2 class="text-2xl font-bold text-indigo-600 mb-4 rounded-md">Subjudul Bagian Kedua</h2>
-                <p class="mb-4">
-                    Lanjutkan dengan mengembangkan argumen Anda atau memperkenalkan subtopik baru. Jaga agar alur artikel
-                    tetap logis dan koheren. Anda bisa memasukkan contoh, statistik, atau kutipan untuk mendukung
-                    klaim Anda dan membuat artikel lebih meyakinkan dan informatif.
-                </p>
-                <p class="mb-4">
-                    Setiap paragraf harus memiliki fokus yang jelas dan berkontribusi pada pesan keseluruhan artikel.
-                    Hindari paragraf yang terlalu panjang yang mungkin membuat pembaca kehilangan minat.
-                    Gunakan transisi yang mulus antara paragraf dan bagian.
-                </p>
+            <h3>Lingkungan Asri: Nafas Kesegaran di Tengah Kota</h3>
+            <p>
+                Lokasi Teras Jati yang dikelilingi oleh pohon durian dan pohon jati menambah dimensi lain pada pengalaman pengunjung. Pohon-pohon ini tidak hanya menawarkan keteduhan yang menyejukkan, tetapi juga menyumbangkan kualitas udara yang lebih segar dan bersih. Suara desiran angin yang berbisik di antara dedaunan, kicauan burung, dan terkadang aroma buah durian yang matang di musimnya, semuanya berpadu menciptakan simfoni alam yang menenangkan. Lingkungan yang hijau dan asri ini berfungsi sebagai pelarian sempurna dari kebisingan dan polusi perkotaan, memungkinkan pengunjung untuk benar-benar bersantai dan memulihkan energi. Anak-anak dapat bermain dengan aman di area terbuka, sementara orang dewasa dapat menikmati suasana tenang sambil menyeruput kopi hangat atau teh herbal. Ini adalah tempat di mana Anda dapat bernapas lega, merasakan kedamaian, dan menikmati momen berkualitas bersama orang-orang terkasih.
+            </p>
 
-                <blockquote class="border-l-4 border-indigo-500 pl-4 py-2 italic text-gray-600 mb-6 bg-indigo-50 rounded-md">
-                    "Kutipan yang relevan atau penekanan pada poin penting dari artikel Anda."
-                </blockquote>
+            <h2>Lebih dari Sekadar Restoran: Pusat Acara Serbaguna</h2>
+            <p>
+                Fleksibilitas adalah salah satu keunggulan utama Teras Jati. Dengan desain yang memikirkan berbagai kebutuhan, tempat ini tidak hanya berfungsi sebagai restoran yang ramah keluarga, tetapi juga sebagai lokasi premium untuk menyelenggarakan beragam acara, baik yang bersifat pribadi maupun korporat. Dengan kapasitas hingga 200 orang, Teras Jati menawarkan ruang yang cukup luas untuk mengakomodasi berbagai jenis perayaan dan pertemuan.
+            </p>
 
-                <p class="mb-4">
-                    Terakhir, ringkaslah poin-poin utama Anda di paragraf penutup. Ini harus memberikan rasa
-                    penutupan dan mungkin mendorong pembaca untuk bertindak atau merenungkan topik tersebut lebih lanjut.
-                    Pastikan untuk tidak memperkenalkan informasi baru di sini.
-                </p>
-            </section>
-        </main>
+            <h3>Pernikahan Impian dalam Nuansa Alam</h3>
+            <p>
+                Bagi pasangan yang mendambakan pernikahan dengan sentuhan alami dan romantis, Teras Jati adalah pilihan yang sempurna. Area outdoor yang luas dengan latar belakang pepohonan rimbun dan arsitektur kayu jati yang megah, menjadi kanvas ideal untuk upacara pernikahan di luar ruangan. Bayangkan janji suci di bawah naungan pohon-pohon rindang, dengan dekorasi yang terinspirasi alam, dan gemericik air (jika ada fitur air). Foto-foto pernikahan akan memiliki latar belakang yang tak terlupakan, mencerminkan keindahan alami dan kehangatan yang abadi. Area indoor juga dapat digunakan untuk resepsi yang lebih formal atau sebagai cadangan jika cuaca tidak mendukung. Teras Jati mampu mewujudkan pernikahan impian dengan sentuhan personal dan suasana yang tak terlupakan.
+            </p>
 
-        <!-- Footer Halaman -->
-        <footer class="w-full max-w-4xl text-center text-gray-500 text-sm mt-8 p-4 bg-white shadow-md rounded-lg">
-            <p>&copy; 2025 Halaman Artikel Sederhana. Hak Cipta Dilindungi Undang-Undang.</p>
-            <p>Dibuat dengan <span class="text-red-500">&hearts;</span> untuk Anda.</p>
-        </footer>
+            <h3>Berkumpul dan Berbagi: Acara Keluarga dan Komunitas</h3>
+            <p>
+                Teras Jati juga merupakan tempat ideal untuk family gathering, reuni teman sekolah, atau pertemuan komunitas. Ruang yang luas memungkinkan interaksi yang santai dan akrab. Anak-anak memiliki area untuk bermain dan menjelajahi lingkungan yang aman dan menyenangkan, sementara orang dewasa dapat berbincang santai atau menikmati hidangan lezat. Suasana yang tenang dan pemandangan yang indah kondusif untuk membangun kembali ikatan, berbagi cerita, dan menciptakan kenangan baru. Tersedia area duduk yang bervariasi, mulai dari meja makan komunal hingga sudut-sudut yang lebih privat, memungkinkan berbagai jenis interaksi.
+            </p>
+
+            <h3>Perayaan Pribadi yang Tak Terlupakan</h3>
+            <p>
+                Untuk acara ulang tahun, arisan, atau pesta perpisahan, Teras Jati menawarkan suasana yang berbeda dari tempat konvensional. Baik Anda menginginkan pesta kebun yang meriah di area outdoor dengan tenda, atau perayaan yang lebih intim di dalam ruangan, fleksibilitas Teras Jati dapat mengakomodasi keinginan Anda. Tim Teras Jati (meskipun tidak disebutkan secara eksplisit, tempat acara seringkali memiliki tim) dapat membantu dalam penataan ruang dan pengaturan kebutuhan spesifik acara Anda, memastikan setiap perayaan berjalan lancar dan berkesan. Pencahayaan di malam hari juga dirancang untuk menciptakan suasana yang hangat dan meriah, menambah magis pada setiap momen spesial.
+            </p>
+
+            <h3>Produktivitas di Tengah Keindahan: Acara Korporat dan Edukasi</h3>
+            <p>
+                Tidak hanya untuk rekreasi, Teras Jati juga mampu menjadi lokasi yang kondusif untuk kegiatan korporat seperti pelatihan, workshop, seminar, atau focus group discussion (FGD). Jauh dari kebisingan kota dan gangguan kantor, lingkungan alami Teras Jati dapat membantu meningkatkan konsentrasi dan kreativitas peserta. Ruangan yang nyaman dan fasilitas yang memadai memungkinkan presentasi berjalan efektif, sementara istirahat dapat dinikmati di tengah udara segar. Kombinasi antara suasana yang inspiratif dan fasilitas pendukung menjadikan Teras Jati pilihan yang menarik bagi perusahaan atau organisasi yang mencari lokasi unik untuk pertemuan penting mereka. Area outdoor juga dapat dimanfaatkan untuk kegiatan team building yang melibatkan aktivitas fisik atau rekreasi ringan.
+            </p>
+
+            <h3>Fleksibilitas Ruang: Indoor dan Outdoor</h3>
+            <p>
+                Salah satu kekuatan utama Teras Jati adalah kemampuannya untuk menawarkan area indoor dan outdoor yang dapat disesuaikan. Area indoor yang berbalut kayu jati memberikan nuansa hangat dan terlindungi, ideal untuk acara yang membutuhkan privasi lebih atau perlindungan dari cuaca. Sementara itu, area outdoor yang luas menawarkan kebebasan dan kedekatan dengan alam, sempurna untuk acara santai, resepsi yang besar, atau pesta kebun. Kemampuan untuk memasang tenda di area outdoor semakin menambah fleksibilitas, memastikan acara tetap dapat berjalan nyaman meskipun kondisi cuaca berubah. Ini adalah kelebihan yang sangat dihargai oleh para perencana acara, karena memberikan banyak pilihan untuk desain dan tata letak.
+            </p>
+
+            <h2>Eksplorasi Kuliner: Cita Rasa Autentik dan Sehat</h2>
+            <p>
+                Pengalaman di Teras Jati tidak akan lengkap tanpa menjelajahi kekayaan kuliner yang ditawarkannya. Dengan filosofi menyajikan hidangan autentik dan sehat, Teras Jati memastikan setiap gigitan adalah perpaduan rasa yang memanjakan lidah dan bahan-bahan berkualitas.
+            </p>
+
+            <h3>Ayam Bakar Kampung: Bintang Utama yang Menggoda Selera</h3>
+            <p>
+                Andalan menu di Teras Jati adalah Ayam Bakar Kampung yang melegenda. Keistimewaan hidangan ini terletak pada beberapa aspek:
+            </p>
+            <ul>
+                <li><strong>Sumber Bahan Baku:</strong> Ayam yang digunakan berasal dari peternakan sendiri, menjamin kesegaran dan kualitas terbaik. Hal ini juga mencerminkan komitmen Teras Jati terhadap sumber bahan lokal dan berkelanjutan.</li>
+                <li><strong>Proses Memasak Tradisional:</strong> Ayam dibakar menggunakan kayu bakar, sebuah metode kuno yang kini jarang ditemukan. Proses pembakaran dengan kayu bakar ini bukan sekadar teknik, tetapi seni yang memberikan dimensi rasa dan aroma unik. Panas yang stabil dan asap alami dari kayu meresap ke dalam daging ayam, menghasilkan tekstur yang empuk di dalam dan kulit yang renyah di luar, dengan aroma bakaran yang sangat khas dan menggugah selera. Rasa manis, gurih, dan sedikit smoky berpadu sempurna, menciptakan pengalaman makan yang tak terlupakan.</li>
+                <li><strong>Bumbu Rahasia:</strong> Resep bumbu yang meresap sempurna menjadi kunci lain dari kelezatan ayam bakar ini. Bumbu tradisional Indonesia yang kaya rempah dioleskan secara merata, kemudian dibakar perlahan hingga bumbu meresap dan karamelisasi terjadi, menghasilkan warna keemasan yang cantik dan rasa yang mendalam.</li>
+            </ul>
+
+            <h3>Nasi Daun Jati: Aroma Khas yang Membangkitkan Selera</h3>
+            <p>
+                Melengkapi hidangan utama, Teras Jati menyajikan Nasi yang dibungkus dengan daun jati. Ini bukan sekadar cara penyajian, tetapi bagian dari warisan kuliner tradisional yang memberikan sentuhan istimewa. Daun jati, saat digunakan untuk membungkus nasi panas, akan melepaskan aroma alami yang khas dan sedikit earthy, meresap ke dalam butiran nasi. Hasilnya adalah nasi yang tidak hanya pulen dan lezat, tetapi juga memiliki aroma unik yang menambah kompleksitas pada pengalaman bersantap. Aroma ini tidak akan Anda temukan pada nasi yang disajikan dengan cara konvensional, menjadikannya elemen yang benar-benar membedakan.
+            </p>
+
+            <h3>Minuman Sehat dan Menyegarkan</h3>
+            <p>
+                Selain hidangan utama, Teras Jati juga menawarkan berbagai pilihan minuman yang menyehatkan dan menyegarkan:
+            </p>
+            <ul>
+                <li><strong>Jus Buah Segar:</strong> Tersedia pilihan jus dari buah-buahan segar musiman, kaya vitamin dan mineral, cocok untuk mendampingi hidangan berat atau sebagai penyegar di siang hari.</li>
+                <li><strong>Wedang Jahe:</strong> Minuman tradisional yang terbuat dari jahe asli, seringkali ditambahkan rempah lain seperti serai atau gula aren, yang dikenal baik untuk menghangatkan tubuh dan meredakan masuk angin. Sangat cocok dinikmati di sore hari yang sejuk di Bogor.</li>
+                <li><strong>Aneka Jamu Tradisional:</strong> Menghadirkan kembali kearifan lokal, Teras Jati juga menyediakan berbagai jenis jamu tradisional Indonesia. Jamu-jamu ini diracik dari bahan-bahan herbal alami yang telah lama dipercaya memiliki khasiat untuk kesehatan dan kebugaran tubuh. Pilihan jamu dapat bervariasi, memungkinkan pengunjung untuk mencoba minuman kesehatan yang sesuai dengan kebutuhan mereka.</li>
+                <li><strong>Kopi Pilihan:</strong> Bagi penggemar kopi, Teras Jati juga menyediakan pilihan kopi yang nikmat, cocok untuk menemani obrolan santai atau sebagai penutup hidangan. Aroma kopi yang semerbak berpadu dengan suasana alami, menciptakan momen relaksasi yang sempurna.</li>
+            </ul>
+            <p>
+                Setiap hidangan dan minuman di Teras Jati dirancang untuk memberikan pengalaman kuliner yang menyeluruh, di mana rasa, aroma, dan penyajian berpadu harmonis dengan lingkungan sekitarnya. Fokus pada bahan-bahan segar, proses tradisional, dan sentuhan kearifan lokal menjadikan Teras Jati lebih dari sekadar restoran biasa.
+            </p>
+
+            <h2>Mengapa Teras Jati Menjadi Destinasi Pilihan?</h2>
+            <p>
+                Ada beberapa faktor yang menjadikan Teras Jati sebagai pilihan unggul bagi mereka yang mencari tempat untuk makan, bersantai, atau merayakan momen penting:
+            </p>
+            <ul>
+                <li><strong>Suasana Tak Tertandingi:</strong> Perpaduan arsitektur kayu jati yang megah, lingkungan hijau yang asri, dan udara segar Bogor menciptakan suasana yang unik dan menenangkan. Ini adalah tempat di mana Anda bisa merasa terhubung kembali dengan alam, jauh dari kebisingan kota.</li>
+                <li><strong>Fleksibilitas Acara:</strong> Dengan area indoor dan outdoor yang luas, serta kapasitas hingga 200 orang, Teras Jati sangat adaptif untuk berbagai jenis acara, dari perayaan pribadi hingga pertemuan korporat. Kemampuan untuk memasang tenda di luar ruangan memberikan keleluasaan tambahan bagi penyelenggara acara.</li>
+                <li><strong>Kuliner Autentik dan Sehat:</strong> Komitmen terhadap bahan-bahan segar (seperti ayam dari peternakan sendiri) dan metode memasak tradisional (seperti pembakaran dengan kayu bakar) menghasilkan hidangan yang tidak hanya lezat tetapi juga sehat. Sentuhan seperti Nasi Daun Jati dan aneka jamu tradisional menambah nilai keunikan kuliner.</li>
+                <li><strong>Lokasi Strategis di Bogor:</strong> Berada di Bogor, Teras Jati mudah diakses dan menawarkan suasana yang lebih sejuk dibandingkan ibu kota, menjadikannya pilihan ideal untuk liburan singkat atau kunjungan sehari.</li>
+            </ul>
+
+            <h2>Kesimpulan</h2>
+            <p>
+                Teras Jati bukan sekadar sebuah tempat; ia adalah sebuah konsep, sebuah pengalaman, dan sebuah undangan untuk merasakan keindahan, ketenangan, dan kelezatan. Dari pilar-pilar jati yang menjulang megah, aroma alami dari dedaunan dan kayu, hingga kelezatan ayam bakar kampung dan keunikan nasi daun jati, setiap elemen di Teras Jati dirancang untuk meninggalkan kesan mendalam. Baik Anda mencari tempat untuk makan siang santai, merayakan momen penting dalam hidup, atau mengadakan pertemuan bisnis di suasana yang berbeda, Teras Jati di Bogor siap menyambut Anda dengan tangan terbuka, menawarkan harmoni yang sempurna antara alam, arsitektur, dan kuliner. Jadikan Teras Jati destinasi pilihan Anda untuk menciptakan kenangan tak terlupakan.
+            </p>
+        </div>
     </div>
 </body>
 </html>
