@@ -3,197 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Judul Meta SEO -->
-    <title>Teras Jati Bogor: Restoran & Tempat Acara Unik dengan Ayam Bakar Kampung</title>
-    <!-- Deskripsi Meta SEO -->
-    <meta name="description" content="Temukan ketenangan di Teras Jati Bogor! Nikmati keindahan arsitektur jati, lingkungan asri, dan kelezatan Ayam Bakar Kampung. Ideal untuk kuliner & acara pribadi/korporat.">
-    <!-- Memuat Tailwind CSS -->
+    <title>Kalkulator PT Lamonte Made International</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hitung potensi profit, komisi, dan semua biaya penjualan produk di TikTok Shop dengan Kalkulator PT Lamonte Made International. Optimalkan strategi bisnismu sekarang!">
+    <meta name="keywords" content="kalkulator tiktok shop, hitung profit tiktok, komisi tiktok, biaya penjualan tiktok, lamonte made international, tiktok seller, kalkulator e-commerce, biaya platform">
+    <meta name="author" content="PT Lamonte Made International">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kalkulator PT Lamonte Made International - Profit TikTok Shop">
+    <meta property="og:description" content="Hitung potensi profit, komisi, dan semua biaya penjualan produk di TikTok Shop dengan Kalkulator PT Lamonte Made International. Optimalkan strategi bisnismu sekarang!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/kalkulator-lamonte-tiktok-shop"> <!-- Ganti dengan URL asli halaman Anda -->
+    <meta property="og:image" content="https://placehold.co/1200x630/cccccc/333333?text=Kalkulator+Lamonte"> <!-- Ganti dengan URL gambar thumbnail yang relevan -->
+    <meta property="og:image:alt" content="Kalkulator profit untuk penjual TikTok Shop oleh PT Lamonte Made International">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kalkulator PT Lamonte Made International - Profit TikTok Shop">
+    <meta name="twitter:description" content="Hitung potensi profit, komisi, dan semua biaya penjualan produk di TikTok Shop dengan Kalkulator PT Lamonte Made International. Optimalkan strategi bisnismu sekarang!">
+    <meta name="twitter:image" content="https://placehold.co/1200x675/cccccc/333333?text=Kalkulator+Lamonte"> <!-- Ganti dengan URL gambar thumbnail yang relevan -->
+    <meta name="twitter:image:alt" content="Kalkulator profit untuk penjual TikTok Shop oleh PT Lamonte Made International">
+
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Kalkulator Profit TikTok Shop",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://your-domain.com/kalkulator-lamonte-tiktok-shop", <!-- Ganti dengan URL asli halaman Anda -->
+      "description": "Alat kalkulator online oleh PT Lamonte Made International untuk menghitung potensi keuntungan, komisi platform, dan berbagai biaya penjualan produk di TikTok Shop, membantu seller dalam perencanaan harga dan strategi bisnis.",
+      "image": "https://placehold.co/512x512/cccccc/333333?text=Kalkulator+Lamonte", <!-- Ganti dengan ikon atau logo aplikasi -->
+      "publisher": {
+        "@type": "Organization",
+        "name": "PT Lamonte Made International",
+        "url": "https://lamonte.id" <!-- Ganti dengan URL website PT Lamonte Made International -->
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "IDR"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Custom styles for the Inter font and overall look */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5;
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        /* Hide number input arrows */
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Align items to the start for article flow */
-            min-height: 100vh;
-            box-sizing: border-box;
         }
-        .article-container {
-            background-color: white;
-            padding: 24px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            max-width: 900px;
-            width: 100%;
-            margin: 20px; /* Margin around the article for better spacing */
-            box-sizing: border-box;
-        }
-        .article-title {
-            color: #1a202c;
-            margin-bottom: 20px;
-            font-size: 2rem; /* Larger title for article */
-            font-weight: bold;
-            text-align: center;
-        }
-        .article-subtitle {
-            color: #4a5568;
-            margin-bottom: 20px;
-            font-size: 1.25rem;
-            text-align: center;
-        }
-        .article-content p {
-            color: #4a5568;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        .article-content h2 {
-            font-size: 1.75rem;
-            font-weight: bold;
-            color: #2d3748;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        .article-content h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2d3748;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-        .article-content ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 1rem;
-            color: #4a5568;
-        }
-        .article-content ul li {
-            margin-bottom: 0.5rem;
-        }
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 24px; /* Space below the video */
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            border-radius: 12px;
-        }
-        .image-container {
-            width: 100%;
-            margin-bottom: 24px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
-            border-radius: 12px;
+        input[type="number"] {
+            -moz-appearance: textfield;
         }
     </style>
 </head>
-<body>
-    <div class="article-container">
-        <h1 class="article-title">Teras Jati: Pesona Alam dan Kuliner Autentik di Bogor</h1>
-        <p class="article-subtitle">Teras Jati adalah sebuah permata tersembunyi di Bogor, menawarkan kombinasi unik antara keindahan alam, arsitektur memukau, dan pengalaman kuliner yang autentik. Lebih dari sekadar restoran, Teras Jati adalah destinasi serbaguna yang ideal untuk relaksasi maupun berbagai acara spesial, menyajikan harmoni sempurna bagi setiap pengunjungnya.</p>
+<body class="p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full max-w-md border border-gray-200">
+        <h1 class="text-2xl sm:text-3xl font-bold text-center mb-6 text-gray-800">Kalkulator | PT Lamonte Made International</h1>
 
-        <div class="video-wrapper">
-            <!-- YouTube video embed -->
-            <iframe
-                src="https://www.youtube.com/embed/5CsiysuKi3M"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-            ></iframe>
+        <!-- Input Section -->
+        <div class="grid grid-cols-1 gap-y-4">
+
+            <!-- Berapa HPP Produkmu? (Rp) -->
+            <div>
+                <label for="costPrice" class="block text-sm font-medium text-gray-700 mb-1">Berapa HPP Produkmu? (Rp)</label>
+                <input type="text" id="costPrice" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Contoh: 50.000">
+            </div>
+
+            <!-- Jenis Toko Kamu -->
+            <div>
+                <label for="shopType" class="block text-sm font-medium text-gray-700 mb-1">Jenis Toko Kamu</label>
+                <div class="relative">
+                    <select id="shopType" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <option value="" disabled selected hidden>Pilih Jenis Toko</option>
+                        <option value="regular-seller">Toko Biasa (Regular Seller)</option>
+                        <option value="mall-seller">Toko Mall (Mall Seller)</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pilih Kategori Produk -->
+            <div>
+                <label for="productCategory" class="block text-sm font-medium text-gray-700 mb-1">Pilih Kategori Produk</label>
+                <div class="relative">
+                    <select id="productCategory" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <option value="" disabled selected hidden>Pilih Kategori Produk</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="fmcg">FMCG</option>
+                        <option value="lifestyle">Lifestyle</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pilih Sub-Kategori Produk -->
+            <div id="subCategoryWrapper" class="hidden"> <!-- Hidden by default -->
+                <label for="subCategory" class="block text-sm font-medium text-gray-700 mb-1">Pilih Sub-Kategori Produk</label>
+                <div class="relative">
+                    <select id="subCategory" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <option value="" disabled selected hidden>Pilih Sub-Kategori</option>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarif Komisi Dinamis (%) - Now a display field -->
+            <div>
+                <label for="dynamicCommissionRateDisplay" class="block text-sm font-medium text-gray-700 mb-1">Tarif Komisi Dinamis (%)</label>
+                <input type="text" id="dynamicCommissionRateDisplay" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 text-gray-700 cursor-not-allowed sm:text-sm" readonly value="0.0">
+            </div>
+
+            <!-- Berapa Harga Jual Produkmu? (Rp) -->
+            <div>
+                <label for="sellingPrice" class="block text-sm font-medium text-gray-700 mb-1">Berapa Harga Jual Produkmu? (Rp)</label>
+                <input type="text" id="sellingPrice" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Contoh: 100.000">
+            </div>
+
+            <!-- Pakai VXP (Voucher Xtra & Bonus Cashback) -->
+            <div>
+                <label for="useVXP" class="block text-sm font-medium text-gray-700 mb-1">Pakai VXP (Voucher Xtra & Bonus Cashback)</label>
+                <div class="relative">
+                    <select id="useVXP" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <option value="0" selected>Tidak Pakai</option>
+                        <option value="3.5">3.5%</option>
+                        <option value="4.5">4.5%</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biaya Komisi Afiliasi (%) -->
+            <div>
+                <label for="affiliateCommissionRate" class="block text-sm font-medium text-gray-700 mb-1">Biaya Komisi Afiliasi (%)</label>
+                <input type="number" id="affiliateCommissionRate" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Contoh: 0">
+            </div>
+
+            <!-- Target Biaya Iklan per Pembeli (Rp) -->
+            <div>
+                <label for="advertisingFeePerBuyer" class="block text-sm font-medium text-gray-700 mb-1">Target Biaya Iklan per Pembeli (Rp)</label>
+                <input type="text" id="advertisingFeePerBuyer" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Contoh: 10.000">
+            </div>
+
+            <!-- Apakah Produk Ini Pre-Order (PO)? -->
+            <div class="flex items-center">
+                <input type="checkbox" id="isPreOrder" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                <label for="isPreOrder" class="ml-2 block text-sm text-gray-900">Apakah Produk Ini Pre-Order (PO)?</label>
+            </div>
+
+            <!-- Hidden: Jumlah Terjual (Needed for BEP & total profit) -->
+            <input type="hidden" id="quantitySold" value="1">
+
+            <!-- Hitung Biaya Sekarang Button -->
+            <button id="calculateButton" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out flex items-center justify-center mt-4">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                Hitung Biaya Sekarang
+            </button>
         </div>
 
-        <div class="article-content">
-            <h2>Desain Alami dan Suasana Menenangkan</h2>
-            <p>
-                Begitu tiba di Teras Jati, pengunjung akan disambut oleh suasana yang menenangkan, jauh dari hiruk pikuk kota. Desain arsitektur Teras Jati secara cerdas mengintegrasikan bangunan dengan lanskap sekitarnya, menciptakan nuansa yang megah namun tetap membumi.
-            </p>
+        <!-- Result Section -->
+        <div class="mt-6 border-t pt-6 border-gray-200">
+            <h2 class="text-xl font-bold text-center mb-4 text-gray-800">Detail Hasil Perhitungan</h2>
 
-            <h3>Keunikan Arsitektur Kayu Jati:</h3>
-            <p>
-                Salah satu elemen paling mencolok adalah pilar-pilar utama yang terbuat dari batang pohon jati utuh. Pilar-pilar kolosal ini tidak hanya sebagai penopang struktur, tetapi juga pernyataan artistik yang kuat, memancarkan aura keanggunan alami. Dinding-dindingnya juga dipercantik dengan potongan-potongan kayu jati yang disusun artistik, menciptakan tekstur visual yang kaya dan memberikan sentuhan kehangatan. Penggunaan kayu jati di seluruh interior menciptakan kohesi desain yang kuat, di mana setiap detail dirancang untuk membangkitkan rasa damai dan koneksi dengan alam.
-            </p>
+            <div class="bg-white p-4 rounded-lg shadow-inner border border-gray-200 text-sm">
+                <div class="mb-3">
+                    <div class="flex justify-between items-center py-1">
+                        <span class="text-gray-700">Biaya Komisi Dinamis (<span id="dynCommPerc">0</span>%):</span>
+                        <span id="dynCommCost" class="font-medium text-gray-800">Rp 0</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="text-gray-700">Biaya Komisi Platform (<span id="platCommPerc">0</span>%):</span>
+                        <span id="platCommCost" class="font-medium text-gray-800">Rp 0</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="text-gray-700">Biaya Layanan Mall (<span id="mallServicePerc">0</span>%):</span>
+                        <span id="mallServiceCost" class="font-medium text-gray-800">Rp 0</span>
+                    </div>
+                    <!-- New line for VXP cost display -->
+                    <div class="flex justify-between items-center py-1">
+                        <span class="text-gray-700">Biaya VXP (<span id="vxpPerc">0</span>%):</span>
+                        <span id="vxpCost" class="font-medium text-gray-800">Rp 0</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="text-gray-700">Biaya Pre-order (<span id="preorderPerc">0</span>%):</span>
+                        <span id="preorderCost" class="font-medium text-gray-800">Rp 0</span>
+                    </div>
+                </div>
+                <hr class="border-t border-gray-300 my-3">
+                <div class="flex justify-between items-center py-1 font-bold">
+                    <span class="text-gray-800">Total Biaya:</span>
+                    <span id="totalCost" class="text-red-600">Rp 0 (NaN%)</span>
+                </div>
+            </div>
 
-            <h3>Lingkungan Asri yang Menyegarkan:</h3>
-            <p>
-                Teras Jati dikelilingi oleh pepohonan rimbun, termasuk pohon durian dan jati, yang menambah kesegaran udara dan menciptakan suasana asri. Suara alam seperti desiran angin dan kicauan burung berpadu menciptakan simfoni yang menenangkan. Lingkungan hijau ini berfungsi sebagai pelarian sempurna dari kebisingan perkotaan, memungkinkan pengunjung untuk bersantai dan memulihkan energi. Ini adalah tempat di mana Anda bisa bernapas lega dan menikmati momen berkualitas.
-            </p>
+            <div class="space-y-4 mt-4">
+                <div class="bg-green-100 p-4 rounded-lg shadow-sm border border-green-300 text-center">
+                    <span class="text-base font-medium text-gray-700">Potensi Omset Bersih:</span>
+                    <span id="netSalesResult" class="block text-xl font-bold text-green-600 mt-1">Rp -</span>
+                </div>
+                <div class="bg-green-100 p-4 rounded-lg shadow-sm border border-green-300 text-center">
+                    <span class="text-base font-medium text-gray-700">Potensi Profit Bersih (Setelah HPP):</span>
+                    <span id="netProfitResult" class="block text-xl font-bold text-green-600 mt-1">Rp -</span>
+                </div>
 
-            <h2>Pusat Acara Serbaguna dengan Kapasitas Luas</h2>
-            <p>
-                Fleksibilitas adalah salah satu keunggulan utama Teras Jati. Dengan kapasitas hingga 200 orang, tempat ini mampu mengakomodasi berbagai jenis perayaan dan pertemuan, baik pribadi maupun korporat.
-            </p>
+                <div class="bg-red-100 p-4 rounded-lg shadow-sm border border-red-300 text-center">
+                    <span class="text-base font-medium text-gray-700">Potensi Kerugian Retur:</span>
+                    <span id="refundLossResult" class="block text-lg font-bold text-red-600 mt-1">Rp -</span>
+                    <p class="text-xs text-gray-600 mt-1">(Estimasi dari 10% retur x 1000 paket)</p>
+                </div>
 
-            <h3>Pilihan Sempurna untuk Berbagai Acara:</h3>
-            <ul>
-                <li><strong>Pernikahan Impian:</strong> Area outdoor yang luas dengan latar belakang pepohonan rimbun dan arsitektur kayu jati yang megah, menjadi kanvas ideal untuk upacara pernikahan di luar ruangan yang romantis dan tak terlupakan.</li>
-                <li><strong>Kumpul Keluarga dan Komunitas:</strong> Ruang yang luas memungkinkan interaksi yang santai dan akrab untuk acara keluarga, reuni, atau pertemuan komunitas. Tersedia area bermain aman untuk anak-anak, sementara orang dewasa bisa menikmati suasana yang tenang.</li>
-                <li><strong>Perayaan Pribadi:</strong> Untuk ulang tahun, arisan, atau pesta perpisahan, Teras Jati menawarkan suasana berbeda dari tempat konvensional, baik untuk pesta kebun di outdoor maupun perayaan intim di dalam ruangan.</li>
-                <li><strong>Acara Korporat dan Edukasi:</strong> Jauh dari hiruk pikuk kota, lingkungan alami Teras Jati kondusif untuk pelatihan, lokakarya, seminar, atau focus group discussion. Suasana inspiratif ini dapat membantu meningkatkan konsentrasi dan kreativitas.</li>
-            </ul>
+                <div class="bg-yellow-100 p-4 rounded-lg shadow-sm border border-yellow-300 text-center flex flex-col items-center">
+                    <svg class="w-6 h-6 text-yellow-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    <p class="text-sm font-semibold text-gray-800">Tanpa Sistem Retur, Potensi Rugi</p>
+                    <p class="text-lg font-bold text-red-600">Rp5-20 Juta/Bulan!</p>
+                    <button id="stopRugiButton" class="mt-3 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out flex items-center justify-center">
+                        Stop Rugi, Cuan bersama Lamonte <span class="ml-2 text-xl">🚀</span>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-            <h3>Fleksibilitas Ruang Indoor dan Outdoor:</h3>
-            <p>
-                Teras Jati menawarkan area indoor dan outdoor yang dapat disesuaikan. Area indoor memberikan nuansa hangat dan terlindungi, ideal untuk acara formal atau saat cuaca tidak mendukung. Sementara itu, area outdoor yang luas menawarkan kebebasan dan kedekatan dengan alam, sempurna untuk acara santai atau resepsi besar. Kemampuan untuk memasang tenda di area outdoor semakin menambah fleksibilitas, memastikan acara tetap nyaman dalam berbagai kondisi.
-            </p>
+        <!-- Pengumuman Penting Section -->
+        <div class="mt-6 p-4 rounded-lg bg-yellow-50 border border-yellow-200 text-sm text-gray-700 text-center">
+            <p class="font-bold mb-2">⚙️ Pengumuman Penting:</p>
+            <p>Kalkulator ini masih dalam tahap <span class="font-bold">pengembangan & penyempurnaan</span>. Kami terus bekerja keras untuk memastikan akurasi perhitungan dan pembaruan data komisi.</p>
+        </div>
 
-            <h2>Eksplorasi Kuliner: Cita Rasa Autentik dan Sehat</h2>
-            <p>
-                Pengalaman di Teras Jati tidak lengkap tanpa menikmati kekayaan kuliner yang otentik dan sehat.
-            </p>
-
-            <h3>Andalan Menu Ayam Bakar Kampung:</h3>
-            <!-- Placeholder untuk Gambar -->
-                <img src="https://i.ibb.co/wZCzn66N/Gemini-Generated-Image-brq94xbrq94xbrq9.png" alt="Gemini-Generated-Image-brq94xbrq94xbrq9" border="0">
-            <p>
-                Bintang utama menu adalah Ayam Bakar Kampung yang legendaris. Ayam ini berasal dari peternakan sendiri, menjamin kesegaran dan kualitas terbaik. Proses pembakaran menggunakan kayu bakar memberikan aroma khas dan rasa smoky yang meresap sempurna ke dalam daging yang empuk, menciptakan pengalaman makan yang tak terlupakan. Bumbu rempah tradisional yang meresap sempurna menjadi kunci kelezatannya.
-            </p>
-
-            <h3>Nasi Daun Jati yang Khas:</h3>
-            <img src="https://i.ibb.co/yBfw15N4/Gemini-Generated-Image-lysr0mlysr0mlysr.png" alt="Gemini-Generated-Image-lysr0mlysr0mlysr" border="0">
-            <p>
-                Melengkapi hidangan utama, Nasi yang dibungkus dengan daun jati disajikan. Pembungkus daun jati melepaskan aroma alami yang khas ke dalam butiran nasi, memberikan sentuhan tradisional dan aroma unik yang tidak ditemukan pada penyajian nasi konvensional.
-            </p>
-
-            <h3>Minuman Sehat dan Menyegarkan:</h3>
-            <img src="https://i.ibb.co/svz2DTr3/Gemini-Generated-Image-js7zfvjs7zfvjs7z.png" alt="Gemini-Generated-Image-js7zfvjs7zfvjs7z" border="0">
-            <p>
-                Teras Jati juga menawarkan berbagai pilihan minuman yang menyehatkan, seperti jus buah segar, wedang jahe yang menghangatkan, aneka jamu tradisional yang diracik dari herbal alami, dan pilihan kopi yang nikmat. Setiap minuman dirancang untuk melengkapi hidangan dan memberikan kesegaran.
-            </p>
-
-            <h2>Mengapa Teras Jati Pilihan Utama?</h2>
-            <p>
-                Teras Jati menjadi pilihan unggul karena beberapa faktor:
-            </p>
-            <ul>
-                <li><strong>Suasana Tak Tertandingi:</strong> Perpaduan arsitektur jati yang megah, lingkungan hijau yang asri, dan udara segar Bogor menciptakan suasana unik dan menenangkan.</li>
-                <li><strong>Fleksibilitas Acara:</strong> Dengan area indoor dan outdoor yang luas serta kapasitas besar, Teras Jati sangat adaptif untuk berbagai jenis acara.</li>
-                <li><strong>Kuliner Autentik dan Sehat:</strong> Komitmen terhadap bahan segar dan metode memasak tradisional menghasilkan hidangan lezat dan unik.</li>
-                <li><strong>Lokasi Strategis:</strong> Berada di Bogor, Teras Jati mudah diakses dan menawarkan suasana yang lebih sejuk.</li>
-            </ul>
-
-            <p>
-                Teras Jati bukan sekadar tempat; ia adalah sebuah konsep, sebuah pengalaman, dan undangan untuk merasakan keindahan, ketenangan, dan kelezatan. Ini adalah destinasi yang sempurna untuk menciptakan kenangan tak terlupakan.
-            </p>
+        <!-- Reset Button -->
+        <div class="mt-6 text-center">
+            <button id="resetButton" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                Reset
+            </button>
         </div>
     </div>
+
+    <script>
+        // Helper function to format numbers to Rupiah currency (for display)
+        function formatRupiah(number) {
+            if (isNaN(number) || number === null || !isFinite(number)) {
+                return 'Rp 0';
+            }
+            const formatted = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(number);
+            return formatted.replace('Rp', 'Rp '); // Ensure space after 'Rp'
+        }
+
+        // Helper function to unformat Rupiah string to a clean number string
+        function unformatRupiah(formattedString) {
+            if (typeof formattedString !== 'string' || !formattedString) {
+                return '';
+            }
+            return formattedString.replace(/Rp\s|\.|\s/g, '').replace(/,/g, '.'); // Remove "Rp ", dots, and spaces, replace comma with dot
+        }
+
+        // Function to apply currency formatting behavior to an input element
+        function setupCurrencyInput(inputElement) {
+            inputElement.setAttribute('type', 'text'); // Ensure type is text for flexible input
+
+            if (inputElement.value) {
+                inputElement.value = formatRupiah(parseFloat(inputElement.value));
+            }
+
+            inputElement.addEventListener('focus', () => {
+                inputElement.value = unformatRupiah(inputElement.value);
+            });
+
+            inputElement.addEventListener('blur', () => {
+                let value = parseFloat(unformatRupiah(inputElement.value)) || 0;
+                inputElement.value = formatRupiah(value);
+            });
+
+            inputElement.addEventListener('input', () => {
+                let rawValue = inputElement.value.replace(/[^0-9.]/g, ''); // Allow only numbers and one dot
+                let parts = rawValue.split('.');
+                if (parts.length > 2) {
+                    rawValue = parts[0] + '.' + parts.slice(1).join('');
+                }
+                inputElement.value = rawValue;
+                calculateProfit(); // Trigger calculation immediately
+            });
+        }
+
+        // Get all input elements
+        const costPriceInput = document.getElementById('costPrice');
+        const shopTypeSelect = document.getElementById('shopType');
+        const productCategorySelect = document.getElementById('productCategory');
+        const subCategorySelect = document.getElementById('subCategory');
+        const subCategoryWrapper = document.getElementById('subCategoryWrapper'); // The div containing sub-category select
+        const dynamicCommissionRateDisplay = document.getElementById('dynamicCommissionRateDisplay'); // Changed ID for display field
+        const sellingPriceInput = document.getElementById('sellingPrice');
+        const useVXPSelect = document.getElementById('useVXP');
+        const affiliateCommissionRateInput = document.getElementById('affiliateCommissionRate');
+        const advertisingFeePerBuyerInput = document.getElementById('advertisingFeePerBuyer');
+        const isPreOrderCheckbox = document.getElementById('isPreOrder');
+        const quantitySoldInput = document.getElementById('quantitySold');
+
+        // Get result display elements
+        const dynCommPercSpan = document.getElementById('dynCommPerc');
+        const dynCommCostSpan = document.getElementById('dynCommCost');
+        const platCommPercSpan = document.getElementById('platCommPerc');
+        const platCommCostSpan = document.getElementById('platCommCost');
+        const mallServicePercSpan = document.getElementById('mallServicePerc');
+        const mallServiceCostSpan = document.getElementById('mallServiceCost');
+        const vxpPercSpan = document.getElementById('vxpPerc'); // New element
+        const vxpCostSpan = document.getElementById('vxpCost'); // New element
+        const preorderPercSpan = document.getElementById('preorderPerc');
+        const preorderCostSpan = document.getElementById('preorderCost');
+        const totalCostSpan = document.getElementById('totalCost');
+        const netSalesResult = document.getElementById('netSalesResult');
+        const netProfitResult = document.getElementById('netProfitResult');
+        const refundLossResult = document.getElementById('refundLossResult');
+
+        const calculateButton = document.getElementById('calculateButton');
+        const resetButton = document.getElementById('resetButton');
+        const stopRugiButton = document.getElementById('stopRugiButton'); // Get the new button element
+
+        // Add event listener for the "Stop Rugi, Cuan bersama Lamonte" button
+        stopRugiButton.addEventListener('click', () => {
+            window.open('https://lamonte.id', '_blank'); // Open lamonte.id in a new tab
+        });
+
+        // Define commission rates based on categories and sub-categories (from the image provided)
+        const commissionRatesData = {
+            'electronics': {
+                'phones-electronics': { label: 'Phones & Electronics', rate: 4 },
+                'household-appliances': { label: 'Household Appliances', rate: 4 },
+                'computers-office-equipment': { label: 'Computers & Office Equipment', rate: 4 },
+                'automotive-motorcycle': { label: 'Automotive & Motorcycle', rate: 5.5 },
+                'virtual-products': { label: 'Virtual Products', rate: 4 }
+            },
+            'fashion': {
+                'jewelry-accessories-derivatives': { label: 'Jewelry Accessories & Derivatives', rate: 4 },
+                'shoes': { label: 'Shoes', rate: 5 },
+                'menswear-underwear': { label: 'Menswear & Underwear', rate: 5.5 },
+                'womenswear-underwear': { label: 'Womenswear & Underwear', rate: 5.5 },
+                'muslim-fashion': { label: 'Muslim Fashion', rate: 5.5 },
+                'luggage-bags': { label: 'Luggage & Bags', rate: 5.5 },
+                'sports-outdoor': { label: 'Sports & Outdoor', rate: 6 },
+                'fashion-accessories': { label: 'Fashion Accessories', rate: 6 }
+            },
+            'fmcg': {
+                'kids-fashion': { label: 'Kids\' Fashion', rate: 4 },
+                'health': { label: 'Health', rate: 4 },
+                'beauty-personal-care': { label: 'Beauty & Personal Care', rate: 4 },
+                'baby-maternity': { label: 'Baby & Maternity', rate: 4 },
+                'food-beverages': { label: 'Food & Beverages', rate: 5 }
+            },
+            'lifestyle': {
+                'books-magazines-audio': { label: 'Books, Magazines & Audio', rate: 5 },
+                'toys-hobbies': { label: 'Toys & Hobbies', rate: 6 },
+                'pet-supplies': { label: 'Pet Supplies', rate: 6 },
+                'collectibles': { label: 'Collectibles', rate: 6 },
+                'textiles-soft-furnishings': { label: 'Textiles & Soft Furnishings', rate: 5 },
+                'furniture': { label: 'Furniture', rate: 5.5 },
+                'tools-hardware': { label: 'Tools & Hardware', rate: 5.5 },
+                'home-improvement': { label: 'Home Improvement', rate: 5.5 },
+                'kitchenware': { label: 'Kitchenware', rate: 6 },
+                'home-supplies': { label: 'Home Supplies', rate: 6 }
+            }
+        };
+
+        // Other constant percentages for display in the output (if not driven by input)
+        const DISPLAY_PLATFORM_COMMISSION_PERCENTAGE = 6;
+        const DISPLAY_MALL_SERVICE_PERCENTAGE = 1.8;
+        const DISPLAY_PREORDER_PERCENTAGE = 3;
+
+        // Default internal values for costs not explicitly visible in input fields.
+        const DEFAULT_ADMIN_FEE_RATE = 0; // %
+        const DEFAULT_VAT_RATE = 0; // %
+        const DEFAULT_FINAL_TAX_RATE = 0; // %
+        const DEFAULT_SHIPPING_FEE_PER_UNIT = 0; // Rp
+        const DEFAULT_BUYER_HANDLING_FEE_PER_UNIT = 0; // Rp
+        const DEFAULT_REFUND_FEE_PER_UNIT = 0; // Rp
+        const DEFAULT_PROMOTION_FEE_PER_UNIT = 0; // Rp
+        const DEFAULT_TRANSACTION_FEE_PER_UNIT = 0; // Rp
+
+        // Constants for refund loss estimation
+        const REFUND_RATE = 0.10; // 10% retur
+        const ESTIMATED_PACKAGES = 1000; // 1000 paket
+
+        function populateSubCategories() {
+            const selectedCategoryKey = productCategorySelect.value;
+            const subCategories = commissionRatesData[selectedCategoryKey];
+
+            // Clear existing sub-category options
+            subCategorySelect.innerHTML = '<option value="" disabled selected hidden>Pilih Sub-Kategori</option>';
+
+            if (subCategories && Object.keys(subCategories).length > 0) {
+                for (const key in subCategories) {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    option.textContent = subCategories[key].label;
+                    subCategorySelect.appendChild(option);
+                }
+                subCategoryWrapper.classList.remove('hidden'); // Show sub-category select with Tailwind
+            } else {
+                subCategoryWrapper.classList.add('hidden'); // Hide if no sub-categories with Tailwind
+            }
+            updateDynamicCommissionRate(); // This will also call calculateProfit
+        }
+
+        function updateDynamicCommissionRate() {
+            const selectedCategoryKey = productCategorySelect.value;
+            const selectedSubCategoryKey = subCategorySelect.value;
+            let currentDynamicCommissionRate = 0;
+
+            if (selectedCategoryKey && selectedSubCategoryKey && commissionRatesData[selectedCategoryKey] && commissionRatesData[selectedCategoryKey][selectedSubCategoryKey]) {
+                currentDynamicCommissionRate = commissionRatesData[selectedCategoryKey][selectedSubCategoryKey].rate;
+            }
+            dynamicCommissionRateDisplay.value = currentDynamicCommissionRate.toFixed(1); // Display with one decimal
+            calculateProfit(); // Trigger calculation after updating the rate
+        }
+
+        function calculateProfit() {
+            // Get values from visible inputs, default to 0 if empty or invalid
+            const costPrice = parseFloat(unformatRupiah(costPriceInput.value)) || 0;
+            const sellingPrice = parseFloat(unformatRupiah(sellingPriceInput.value)) || 0;
+            const vxpPercentage = parseFloat(useVXPSelect.value) || 0;
+            const affiliateCommissionRate = parseFloat(affiliateCommissionRateInput.value) || 0;
+            const advertisingFeePerBuyer = parseFloat(unformatRupiah(advertisingFeePerBuyerInput.value)) || 0;
+            const isPreOrder = isPreOrderCheckbox.checked;
+            const quantitySold = parseFloat(quantitySoldInput.value) || 1;
+
+            // Get dynamic commission rate from the display field
+            const actualDynamicCommissionRate = parseFloat(dynamicCommissionRateDisplay.value) || 0;
+
+            // --- Per-unit calculations ---
+            const effectiveSellingPricePerUnit = sellingPrice;
+
+            // Costs for the "Detail Hasil Perhitungan" section
+            const displayDynamicCommissionCost = effectiveSellingPricePerUnit * (actualDynamicCommissionRate / 100);
+            const displayPlatformCommissionCost = effectiveSellingPricePerUnit * (DISPLAY_PLATFORM_COMMISSION_PERCENTAGE / 100);
+            const displayMallServiceCost = (shopTypeSelect.value === 'mall-seller') ? (effectiveSellingPricePerUnit * (DISPLAY_MALL_SERVICE_PERCENTAGE / 100)) : 0;
+            const displayVxpCost = effectiveSellingPricePerUnit * (vxpPercentage / 100); // VXP cost calculation for display
+            const displayPreorderCost = (isPreOrder) ? (effectiveSellingPricePerUnit * (DISPLAY_PREORDER_PERCENTAGE / 100)) : 0;
+
+            // Total displayed costs - NOW INCLUDES VXP COST
+            const totalDisplayedCosts = displayDynamicCommissionCost + displayPlatformCommissionCost + displayMallServiceCost + displayVxpCost + displayPreorderCost;
+
+            // Actual commission and fees for total variable cost calculation
+            const actualAffiliateCommissionPerUnit = effectiveSellingPricePerUnit * (affiliateCommissionRate / 100);
+
+            // Other default costs per unit (not in visible input but part of general calculation)
+            const adminFeePerUnit = effectiveSellingPricePerUnit * (DEFAULT_ADMIN_FEE_RATE / 100);
+            const vatPerUnit = effectiveSellingPricePerUnit * (DEFAULT_VAT_RATE / 100);
+            const finalTaxPerUnit = effectiveSellingPricePerUnit * (DEFAULT_FINAL_TAX_RATE / 100);
+            const shippingFeePerUnit = DEFAULT_SHIPPING_FEE_PER_UNIT;
+            const buyerHandlingFeePerUnit = DEFAULT_BUYER_HANDLING_FEE_PER_UNIT;
+            const refundFeePerUnit = DEFAULT_REFUND_FEE_PER_UNIT;
+            const promotionFeePerUnit = DEFAULT_PROMOTION_FEE_PER_UNIT;
+            const transactionFeePerUnit = DEFAULT_TRANSACTION_FEE_PER_UNIT;
+
+            // All variable costs per unit for profit calculation - NOW INCLUDES VXP COST
+            const totalVariableCostPerUnit = costPrice + displayDynamicCommissionCost + actualAffiliateCommissionPerUnit + displayVxpCost +
+                                            adminFeePerUnit + vatPerUnit + finalTaxPerUnit +
+                                            shippingFeePerUnit + buyerHandlingFeePerUnit + refundFeePerUnit +
+                                            promotionFeePerUnit + transactionFeePerUnit + advertisingFeePerBuyer;
+
+            // --- Results per unit ---
+            const netSalesPerUnit = effectiveSellingPricePerUnit;
+            const netProfitPerUnit = effectiveSellingPricePerUnit - totalVariableCostPerUnit;
+
+            // --- Refund Loss Estimation (mimicking screenshot) ---
+            const estimatedRefundLoss = costPrice * REFUND_RATE * ESTIMATED_PACKAGES;
+
+            // Display results in the output layout
+            dynCommPercSpan.textContent = actualDynamicCommissionRate.toFixed(1); // Display with one decimal
+            dynCommCostSpan.textContent = formatRupiah(displayDynamicCommissionCost);
+            platCommPercSpan.textContent = DISPLAY_PLATFORM_COMMISSION_PERCENTAGE;
+            platCommCostSpan.textContent = formatRupiah(displayPlatformCommissionCost);
+            mallServicePercSpan.textContent = DISPLAY_MALL_SERVICE_PERCENTAGE;
+            mallServiceCostSpan.textContent = formatRupiah(displayMallServiceCost);
+            
+            // Display VXP cost
+            vxpPercSpan.textContent = vxpPercentage.toFixed(1);
+            vxpCostSpan.textContent = formatRupiah(displayVxpCost);
+
+            preorderPercSpan.textContent = DISPLAY_PREORDER_PERCENTAGE;
+            preorderCostSpan.textContent = formatRupiah(displayPreorderCost);
+
+            totalCostSpan.textContent = formatRupiah(totalDisplayedCosts);
+            const totalCostPercentage = (sellingPrice > 0) ? (totalDisplayedCosts / sellingPrice) * 100 : NaN;
+            totalCostSpan.textContent += ` (${isNaN(totalCostPercentage) ? 'NaN' : totalCostPercentage.toFixed(2)}%)`;
+
+            netSalesResult.textContent = formatRupiah(netSalesPerUnit);
+            netProfitResult.textContent = formatRupiah(netProfitPerUnit);
+            refundLossResult.textContent = formatRupiah(estimatedRefundLoss);
+
+            // Hide/show mall service fee based on shop type (using flex for Tailwind compatibility)
+            const mallServiceDiv = mallServiceCostSpan.closest('div.flex');
+            if (shopTypeSelect.value === 'mall-seller') {
+                mallServiceDiv.style.display = 'flex';
+            } else {
+                mallServiceDiv.style.display = 'none';
+            }
+
+            // Hide/show pre-order fee based on checkbox (using flex for Tailwind compatibility)
+            const preorderDiv = preorderCostSpan.closest('div.flex');
+            if (isPreOrderCheckbox.checked) {
+                preorderDiv.style.display = 'flex';
+            } else {
+                preorderDiv.style.display = 'none';
+            }
+
+            // Adjust text color based on profit (for net profit)
+            netProfitResult.classList.remove('text-green-700', 'text-red-700');
+            netProfitResult.classList.remove('text-green-600', 'text-red-600');
+            if (netProfitPerUnit >= 0) {
+                netProfitResult.classList.add('text-green-600');
+            } else {
+                netProfitResult.classList.add('text-red-600');
+            }
+        }
+
+        // Apply currency formatting to specific monetary input fields
+        setupCurrencyInput(costPriceInput);
+        setupCurrencyInput(sellingPriceInput);
+        setupCurrencyInput(advertisingFeePerBuyerInput);
+
+
+        // Add event listeners for category and sub-category changes
+        productCategorySelect.addEventListener('change', populateSubCategories);
+        subCategorySelect.addEventListener('change', updateDynamicCommissionRate);
+        useVXPSelect.addEventListener('change', calculateProfit); // Added event listener for VXP select
+
+        // Add event listeners to other interactive elements
+        const allInteractiveElements = document.querySelectorAll('input[type="text"], input[type="number"], select, input[type="checkbox"]');
+        allInteractiveElements.forEach(element => {
+            // Exclude already handled inputs (currency inputs via setupCurrencyInput, category/sub-category selects, VXP select and display-only input)
+            if (![costPriceInput, sellingPriceInput, advertisingFeePerBuyerInput, productCategorySelect, subCategorySelect, useVXPSelect, dynamicCommissionRateDisplay].includes(element)) {
+                element.addEventListener('input', calculateProfit);
+            }
+            // Add change listener for selects/checkboxes not already handled
+            if (![productCategorySelect, subCategorySelect, useVXPSelect].includes(element)) {
+                 element.addEventListener('change', calculateProfit);
+            }
+        });
+
+
+        // Add event listener for the Calculate button
+        calculateButton.addEventListener('click', calculateProfit);
+
+        // Add event listener for the Reset button
+        resetButton.addEventListener('click', () => {
+            // Reset input values
+            costPriceInput.value = '';
+            shopTypeSelect.value = '';
+            productCategorySelect.value = '';
+            sellingPriceInput.value = '';
+            useVXPSelect.value = '0'; // Default to Tidak Pakai
+            affiliateCommissionRateInput.value = '';
+            advertisingFeePerBuyerInput.value = '';
+            isPreOrderCheckbox.checked = false;
+            quantitySoldInput.value = '1';
+
+            // Reset sub-categories and dynamic commission rate display
+            populateSubCategories();
+
+            // Re-apply formatting to monetary inputs after resetting their raw values
+            setupCurrencyInput(costPriceInput);
+            setupCurrencyInput(sellingPriceInput);
+            setupCurrencyInput(advertisingFeePerBuyerInput);
+            
+            // Reset all output spans to default "Rp 0" or "Rp -"
+            dynCommCostSpan.textContent = 'Rp 0';
+            dynCommPercSpan.textContent = '0';
+            platCommCostSpan.textContent = 'Rp 0';
+            platCommPercSpan.textContent = DISPLAY_PLATFORM_COMMISSION_PERCENTAGE;
+            mallServiceCostSpan.textContent = 'Rp 0';
+            mallServicePercSpan.textContent = DISPLAY_MALL_SERVICE_PERCENTAGE;
+            vxpCostSpan.textContent = 'Rp 0'; // Reset VXP cost
+            vxpPercSpan.textContent = '0'; // Reset VXP percentage
+            preorderCostSpan.textContent = 'Rp 0';
+            preorderPercSpan.textContent = DISPLAY_PREORDER_PERCENTAGE;
+            totalCostSpan.textContent = 'Rp 0 (NaN%)';
+            netSalesResult.textContent = 'Rp -';
+            netProfitResult.textContent = 'Rp -';
+            refundLossResult.textContent = 'Rp -';
+
+            // Ensure mall service and pre-order costs are hidden if inputs are reset to default
+            mallServiceCostSpan.closest('div.flex').style.display = 'none';
+            preorderCostSpan.closest('div.flex').style.display = 'none';
+        });
+
+        // Initial setup on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply currency formatting on load
+            setupCurrencyInput(costPriceInput);
+            setupCurrencyInput(sellingPriceInput);
+            setupCurrencyInput(advertisingFeePerBuyerInput);
+
+            // Set default blank options for main selects
+            shopTypeSelect.value = '';
+            productCategorySelect.value = '';
+
+            // Populate sub-categories (which will default to "Pilih Sub-Kategori" and hide the wrapper)
+            populateSubCategories();
+        });
+    </script>
 </body>
 </html>
